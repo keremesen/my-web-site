@@ -11,11 +11,13 @@ import Head from "next/head";
 
 export default function Home() {
   return (
+    
     <Flex align="center" justify="center"   h="100vh" bg="#111" w="100vw" minW="1080px"    >
-      <Head>
+     <Head>
         <title>Kerem Esen</title>
-        <meta name="viewport" content="initial-scale=1.0 , width=device-width , height=device-height" />
-      </Head>
+        <meta name="viewport"   content="initial-scale=1.0 , width=device-width , height=device-height" />
+        <meta property="og:locale" content="en" />
+        </Head>
       <Flex
         direction="column"
         bg="#2222"
@@ -33,7 +35,7 @@ export default function Home() {
         </Flex>
         <Flex bg="#3333" h="30%" align="center" justify="center" my={5} w="100%" >
           <Heading size="md">
-            hi im kerem im 19 yo developer.im trying to learn and do anything at
+            hi im kerem im 19 yo developer.im trying to learn and do something at
             reactjs/nextjs
           </Heading>
         </Flex>
