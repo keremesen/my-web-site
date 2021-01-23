@@ -11,7 +11,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <Flex align="center" justify="center" height="100vh" bg="#111">
+    <Flex align="center" justify="center"   h="100vh" bg="#111" w="100vw" minW="1080px" minH="100vh"   >
       <Head>
         <title>Kerem Esen</title>
       </Head>
@@ -19,23 +19,25 @@ export default function Home() {
         direction="column"
         bg="#2222"
         w="1080px"
-        height="60vh"
         color="white"
         boxShadow="2xl"
         borderRadius={15}
+        h="60vh"
+        minW="1080px"
+        minH="60vh"
       >
-        <Flex direction="column" m={8}>
+        <Flex direction="column" m={8} >
           <Heading>KEREM ESEN </Heading>
           <Text fontSize="xl"> FULL-STACK DEVELOPER</Text>
         </Flex>
-        <Flex bg="#3333" h="30%" align="center" justify="center" my={5}>
+        <Flex bg="#3333" h="30%" align="center" justify="center" my={5} w="100%" >
           <Heading size="md">
             hi im kerem im 19 yo developer.im trying to learn and do anything at
             reactjs/nextjs
           </Heading>
         </Flex>
 
-        <Grid templateColumns="repeat(5, 1fr)" gap={6} gridAutoFlow>
+        <Grid templateColumns="repeat(5, 1fr)" gap={6} direction={["column","column","row","row"]}>
           <Link
             href="https://www.instagram.com/keremeesen"
             isExternal
