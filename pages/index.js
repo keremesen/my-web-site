@@ -7,10 +7,14 @@ import {
   FaMailchimp,
   FaMailBulk,
 } from "react-icons/fa";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <Flex align="center" justify="center" height="100vh" bg="#111">
+      <Head>
+        <title>Kerem Esen</title>
+      </Head>
       <Flex
         direction="column"
         bg="#2222"
