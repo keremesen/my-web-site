@@ -11,9 +11,10 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <Flex align="center" justify="center"   h="100vh" bg="#111" w="100vw" minW="1080px" minH="100vh"   >
+    <Flex align="center" justify="center"   h="100vh" bg="#111" w="100vw" minW="1080px"    >
       <Head>
         <title>Kerem Esen</title>
+        <meta name="viewport" content="initial-scale=1.0 , width=device-width , height=device-height" />
       </Head>
       <Flex
         direction="column"
