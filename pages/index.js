@@ -21,11 +21,12 @@ export default function Home() {
       <Flex
         direction="column"
         bg="#2222"
-        w="1080px"
+        w="70%"
         color="white"
         boxShadow="2xl"
         borderRadius={15}
         h="60vh"
+        minW="70%"
         
 
       >
@@ -33,14 +34,18 @@ export default function Home() {
           <Heading>KEREM ESEN </Heading>
           <Text fontSize="xl"> FULL-STACK DEVELOPER</Text>
         </Flex>
-        <Flex bg="#3333" h="30%" align="center" justify="center" my={5} minW="100%" >
+        <Flex bg="#3333" h="30%" align="center" justify="center" my={5} >
           <Heading size="md">
             hi im kerem im 19 yo developer.im trying to learn and do something at
             reactjs/nextjs
           </Heading>
         </Flex>
 
-        <Grid templateColumns="repeat(5, 1fr)" gap={6}  minW="100%">
+        <Flex  w="100%" minW="100%"
+        align="center"
+        justify="space-around"
+        direction={["column","row"]}
+        minW="100%">
           <Link
             href="https://www.instagram.com/keremeesen"
             isExternal
@@ -131,7 +136,7 @@ export default function Home() {
               <Text>kerem.esen.01@hotmail.com</Text>
             </Flex>
           </Link>
-        </Grid>
+        </Flex>
       </Flex>
     </Flex>
   );
