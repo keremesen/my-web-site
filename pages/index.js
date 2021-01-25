@@ -12,13 +12,12 @@ import Head from "next/head";
 export default function Home() {
   return (
     
-    <Flex align="center" justify="center"   h="100vh" bg="#111" w="100vw" minW="1080px"    >
-     <Head>
+    <Flex align="center" justify="center"   h="100vh" bg="#111" w="100vw"  minW="100vw" minH="100vh"  >
+      <Head>
         <title>Kerem Esen</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport"   content="initial-scale=1.0 , width=device-width , height=device-height" />
-       
-        </Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        </Head> 
       <Flex
         direction="column"
         bg="#2222"
@@ -27,21 +26,21 @@ export default function Home() {
         boxShadow="2xl"
         borderRadius={15}
         h="60vh"
-        minW="1080px"
-        minH="60vh"
+        
+
       >
-        <Flex direction="column" m={8} >
+        <Flex direction="column" m={8} minW="100%" >
           <Heading>KEREM ESEN </Heading>
           <Text fontSize="xl"> FULL-STACK DEVELOPER</Text>
         </Flex>
-        <Flex bg="#3333" h="30%" align="center" justify="center" my={5} w="100%" >
+        <Flex bg="#3333" h="30%" align="center" justify="center" my={5} minW="100%" >
           <Heading size="md">
             hi im kerem im 19 yo developer.im trying to learn and do something at
             reactjs/nextjs
           </Heading>
         </Flex>
 
-        <Grid templateColumns="repeat(5, 1fr)" gap={6} direction={["column","column","row","row"]}>
+        <Grid templateColumns="repeat(5, 1fr)" gap={6}  minW="100%">
           <Link
             href="https://www.instagram.com/keremeesen"
             isExternal
