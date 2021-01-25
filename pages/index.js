@@ -15,8 +15,9 @@ export default function Home() {
     <Flex align="center" justify="center"   h="100vh" bg="#111" w="100vw" minW="1080px"    >
      <Head>
         <title>Kerem Esen</title>
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport"   content="initial-scale=1.0 , width=device-width , height=device-height" />
-        <meta property="og:locale" content="en" />
+       
         </Head>
       <Flex
         direction="column"
