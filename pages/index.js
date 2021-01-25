@@ -35,15 +35,21 @@ export default function Home() {
         color="white"
         boxShadow="2xl"
         borderRadius={15}
-        h="60vh"
+        h="80%"
         minW="70%"
+        justify="space-evenly"
       >
-        <Flex direction="column" m={8} minW="100%">
-          <Heading letterSpacing={2}>KEREM ESEN </Heading>
-          <Text fontSize="xl" as="samp"> FULL-STACK DEVELOPER</Text>
+        <Flex direction="column" mx={8} minW="100%">
+          <Heading letterSpacing={2} _selection={{ bg: "gray.900" }}>
+            KEREM ESEN{" "}
+          </Heading>
+          <Text fontSize="xl" as="samp" _selection={{ bg: "gray.900" }}>
+            {" "}
+            FULL-STACK DEVELOPER
+          </Text>
         </Flex>
-        <Flex bg="#3333" h="25%" align="center" justify="center" my={5}>
-          <Text fontSize="xl" as="samp">
+        <Flex bg="#3333" h="25%" align="center" justify="center">
+          <Text fontSize="xl" as="samp" _selection={{ bg: "gray.900" }}>
             hi im kerem im 19 yo developer.im trying to learn and do something
             at reactjs/nextjs
           </Text>
@@ -57,40 +63,38 @@ export default function Home() {
           direction={["column", "row"]}
           minW="100%"
         >
-          <Link
-            href="https://www.instagram.com/keremeesen"
-            isExternal
-            
-          >
+          <Link href="https://www.instagram.com/keremeesen" isExternal>
             <Flex justify="center" align="center" direction="column">
-              <Heading size="md">Instagram</Heading>
+              <Heading size="md" _selection={{ bg: "gray.900" }}>
+                Instagram
+              </Heading>
               <FaInstagram />
-              <Text as="samp">keremeesen</Text>
+              <Text as="samp" _selection={{ bg: "gray.900" }}>
+                keremeesen
+              </Text>
             </Flex>
           </Link>
-          <Link
-            href="https://www.twitter.com/kerooxd"
-            isExternal
-            size="16px"
-            
-          >
+          <Link href="https://www.twitter.com/kerooxd" isExternal size="16px">
             <Flex justify="center" align="center" direction="column">
-              <Heading size="md">Twitter</Heading>
+              <Heading size="md" _selection={{ bg: "gray.900" }}>
+                Twitter
+              </Heading>
               <FaTwitter />
-              <Text as="samp">kerooxd</Text>
+              <Text as="samp" _selection={{ bg: "gray.900" }}>
+                kerooxd
+              </Text>
             </Flex>
           </Link>
-          <Link
-            href="https://www.github.com/keremesen"
-            isExternal
-            size="16px"
-            
-          >
+          <Link href="https://www.github.com/keremesen" isExternal size="16px">
             <Box w="100%" h="100%" textAlign="center">
               <Flex justify="center" align="center" direction="column">
-                <Heading size="md">GitHub</Heading>
+                <Heading size="md" _selection={{ bg: "gray.900" }}>
+                  GitHub
+                </Heading>
                 <FaGithub />
-                <Text as="samp">keremesen</Text>
+                <Text as="samp" _selection={{ bg: "gray.900" }}>
+                  keremesen
+                </Text>
               </Flex>
             </Box>
           </Link>
@@ -98,23 +102,24 @@ export default function Home() {
             href="https://www.linkedin.com/in/kerem-esen-55a1941bb/"
             isExternal
             size="16px"
-            
           >
             <Flex justify="center" align="center" direction="column">
-              <Heading size="md" as="samp">LinkedIn</Heading>
+              <Heading size="md" as="samp" _selection={{ bg: "gray.900" }}>
+                LinkedIn
+              </Heading>
               <FaLinkedin />
-              <Text>keremesen</Text>
+              <Text _selection={{ bg: "gray.900" }}>keremesen</Text>
             </Flex>
           </Link>
-          <Link
-            href="mailto:kerem.esen.01@hotmail.com"
-            isExternal
-
-          >
+          <Link href="mailto:kerem.esen.01@hotmail.com" isExternal>
             <Flex justify="center" align="center" direction="column">
-              <Heading size="md">Mail</Heading>
+              <Heading size="md" _selection={{ bg: "gray.900" }}>
+                Mail
+              </Heading>
               <FaMailBulk />
-              <Text as="samp" fontSize="sm">kerem.esen.01@hotmail.com</Text>
+              <Text as="samp" fontSize="sm" _selection={{ bg: "gray.900" }}>
+                kerem.esen.01@hotmail.com
+              </Text>
             </Flex>
           </Link>
         </Flex>
