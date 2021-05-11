@@ -18,7 +18,7 @@ export default function Home() {
       setTheme("111");
       setContentTheme("2222");
     } else {
-      setTheme("DBB3B1");
+      setTheme("FFF0F5");
       setContentTheme("A67F8E");
     }
   });
