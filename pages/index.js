@@ -7,7 +7,6 @@ import {
   FaMailBulk,
 } from "react-icons/fa";
 import React, { useState, useEffect } from "react";
-import Typical from "react-typical"
 
 export default function Home() {
   const [toggle, setToggle] = useState(false);
@@ -70,12 +69,8 @@ export default function Home() {
           </text>
         </div>
         <div className="flex items-center justify-center text-white bg-textarea p-4 sm:p-6 md:p-8 lg:p-10 font-mono text-xs sm:text-sm md:text-base my-4 select-none">
-          hi im kerem im 19 yo developer.im trying to learn and do something at &nbsp;
-          <Typical loop={Infinity} wrapper="b"
-          steps={[
-            'react.js', 2000,
-            'next.js', 2000
-          ]} />
+          hi im kerem im 19 yo developer.im trying to learn and do something at
+          reactjs/nextjs
         </div>
 
         <ul className="flex flex-col sm:flex-col md:flex-col lg:flex-row items-center justify-center space-x-0 sm:space-x-4 text-xs sm:text-sm md:text-base">
